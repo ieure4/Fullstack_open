@@ -25,7 +25,7 @@ const App = () => {
     const index = selected;
     const arrayCopy = votes;
     arrayCopy[index]+=1;
-    setVotes(arrayCopy)
+    setVotes([...arrayCopy])
     
     const maxVote = Math.max.apply(null, votes)
     setMaxIndex(votes.indexOf(maxVote))
